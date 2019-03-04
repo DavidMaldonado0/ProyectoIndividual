@@ -3,7 +3,11 @@ import React from "react";
 class Form extends React.Component {
     render() {
         return(
-            <div>Componentes del Formulario</div>
+                <form onSubmit={this.props.getWeather}>
+                    <input type="text" name="city" placeholder="Ciudad..."/>
+                    <input type="text" name="country" placeholder="Pais..."/>
+                    <button>Obtener Clima</button>
+                </form>
         );
     }
 };
