@@ -55,7 +55,6 @@ class App extends React.Component{
                                 <Titles />
                                 </div>
                                 <div className="col-xs-7 form-container">
-                                <Titles />
                                 <Form getWeather={this.getWeather} />
                                 <Weather 
                                 temperature={this.state.temperature} 
